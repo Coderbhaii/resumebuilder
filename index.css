@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* #region CV Structure v2 */
+
+.cv-container {
+    height: auto;
+    position: relative;
+    min-width: 210mm;
+    max-width: 210mm;
+    overflow: hidden;
+}
+
+.cv-container .pages-layer {
+    background: brown;
+    z-index: 1;
+}
+
+.cv-container .break-points-layer,
+.cv-container .content-layer {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.cv-container .break-points-layer {
+    z-index: 3;
+}
+
+.cv-container .content-layer {
+    display: flex;
+    z-index: 2;
+}
+
+.cv-container .content-layer .left-side,
+.cv-container .content-layer .right-side {
+    padding-inline: 5px;
+    width: 50%;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.cv-container .content-layer .left-side .section,
+.cv-container .content-layer .right-side .section {
+    background: darkorchid;
+    color: white;
+    font-family: sans-serif;
+    margin-block: 5px;
+    width: 100%;
+    border-radius: 4px;
+    z-index: 1;
+    padding: 4px;
+    text-align: justify;
+}
+
+.cv-container .content-layer .left-side {
+    border-right: 3px solid white;
+}
+
+.empty-div {
+    transition: 0.5s ease-in-out !important;
+}
+
+/* #endregion CV Structure v2 */
+
+
+
+/* #region Split Page Break */
+
+.split-break {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.split-break-wrapper:before {
+    content: '';
+    display: block;
+    float: left;
+}
+
+
+/* #endregion Split Page Break */

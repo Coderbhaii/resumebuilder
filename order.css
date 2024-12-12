@@ -1,0 +1,80 @@
+#kt_datatable_fixed_columns_info {
+    display: none;
+}
+
+.dataTables_scrollBody {
+    max-height: 100vh !important;
+}
+
+#kt_datatable_fixed_columns tbody tr td {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#kt_datatable_fixed_columns tbody tr td.active {
+    background-color: #ddd;
+}
+
+#kt_datatable_fixed_columns tbody tr td #kt_drawer_example_basic_button {
+    display: none;
+}
+
+#kt_datatable_fixed_columns tbody tr td.active #kt_drawer_example_basic_button {
+    display: block;
+}
+
+#kt_drawer_example_basic .notes-images img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#kt_drawer_example_basic .notes-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+
+#kt_drawer_example_basic .message-area {
+    height: calc(100vh - 114px) !important;
+}
+
+#kt_tab_pane_9 .card {
+    width: 100%;
+    height: 30vh;
+}
+
+#kt_tab_pane_9 .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#kt_tab_pane_9 .card i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    background: #00000073;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#viewOtherDetails .modal-dialog {
+    max-width: 80%;
+}

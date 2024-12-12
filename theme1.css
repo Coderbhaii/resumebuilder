@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fontFamily: "Poppins", sans-serif;
+    --cvLeftColor: #C8DFED;
+    --cvRightColor: #191919;
+    --wordBreak: break-all;
+}
+
+
+.cvContent {
+    height: fit-content !important;
+    position: relative;
+    height: var(--cvHeight);
+    /* Ensure there's a minimum height for at least one A4 page */
+    background-image: repeating-linear-gradient(to bottom,
+            transparent,
+            transparent 296mm,
+            /* Positioning the line just before each new A4 page */
+            black 296mm,
+            black 297mm
+            /* 1mm thick line */
+        );
+}
+
+.cvContent .top-right-heading {
+    background: var(--theme1);
+    padding: 10px 20px 10px 46px;
+    font-family: var(--fontFamily);
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0 60px;
+    position: absolute;
+    right: 0;
+}
+
+.cvContent .top-right-heading span.text {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--fontFamily);
+}
+
+.cvContent .top-right-heading i {
+    color: #ecb64a;
+    font-size: 23px;
+    transform: rotate(60deg);
+    margin-left: 14px;
+}
+
+.cvContent .cv-header {
+    display: flex;
+    background: #c0dbd6;
+    padding-top: 30px;
+    background-image: linear-gradient(90deg, #8ce6d5, white);
+}
+
+.cvContent .user-img-header {
+    width: 33%;
+    background: var(--theme1);
+    margin: 0px 25px;
+    border-radius: 220px 220px 0 0;
+}
+
+.cvContent .user-img-header .user-img img {
+    border-radius: 50%;
+    margin-top: 22px;
+    height: 220px;
+    width: 220px;
+}
+
+.cvContent .user-info {
+    flex: 1;
+    padding: 65px 25px 10px 20px;
+}
+
+.cvContent .user-info .name {
+    font-size: 3.6rem;
+    margin: 0;
+    font-family: var(--fontFamily);
+    font-weight: 700;
+    color: var(--theme1);
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.cvContent .user-info .headline {
+    font-size: 18px;
+    color: var(--theme1);
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 0px;
+    display: inline-block;
+    border-bottom: 3px solid rgb(58 133 179 / 50%);
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+    font-family: var(--fontFamily) !important;
+}
+
+.bar-line {
+    border: 1px solid var(--theme1);
+}
+
+.cvContent .section .paragraph {
+    font-size: 14px;
+    color: var(--theme1);
+    font-weight: 400 !important;
+    font-family: var(--fontFamily) !important;
+}
+
+.cvContent .sec-con1 {
+    width: 33%;
+    background: var(--theme1);
+    margin: 0px 25px;
+    padding-top: 20px;
+    margin-right: 0px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    z-index: 99;
+}
+
+.cvContent .cv-body .bar-bottom {
+    position: absolute;
+    width: 60%;
+    height: 35px;
+    background: #c2d7e4;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 35px 0 0;
+}
+
+.cvContent .sec-con1 .sec-heading {
+    padding: 10px;
+    background: #c8e6f5;
+    border-radius: 0 25px 25px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--theme1);
+    margin-left: 0px;
+    display: inline-block;
+    padding-right: 14px;
+    font-family: var(--fontFamily) !important;
+}
+
+.cvContent .perInfo .items {
+    padding-left: 18px;
+    padding-top: 16px;
+}
+
+.cvContent .perInfo .items .item i {
+    margin-right: 10px;
+    color: var(--cvLeftColor);
+    font-size: 18px;
+    margin-right: 18px;
+}
+
+.cvContent .perInfo .items .item .text {
+    font-size: 12px;
+    font-family: var(--fontFamily);
+    word-break: var(--wordBreak);
+}
+
+.cvContent .perInfo .items .item i.icon-circle {
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cvContent .perInfo .items .item {
+    color: white;
+    display: flex;
+}
+
+.cvContent .section .items {
+    margin-bottom: 20px !important;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cvContent .perInfo .items .item img:not(.icon) {
+    width: 60px;
+}
+
+.cvContent .perInfo .items .item img.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+}
+
+
+.cvContent .sec-con1 .section .items .item {
+    display: flex;
+    color: white;
+    font-size: 12px;
+    margin-right: 5px;
+    font-family: var(--fontFamily);
+}
+
+.cvContent .sec-con2 .section .items .item {
+    display: flex;
+    font-size: 12px;
+    margin-right: 5px;
+    font-family: var(--fontFamily);
+    color: var(--cvRightColor) !important;
+}
+
+.cvContent .sec-con2 .section.references .items .item,
+.cvContent .sec-con2 .section.languages .items .item,
+.cvContent .sec-con2 .section.hobbies .items .item {
+    width: 48%;
+    font-size: 18px;
+}
+
+.cvContent .sec-con2 .section.references .items .item i,
+.cvContent .sec-con2 .section.hobbies .items .item i,
+.cvContent .sec-con2 .section.languages .items .item i {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.cvContent .sec-con2 .section.references .content::before,
+.cvContent .sec-con2 .section.references .content::after,
+.cvContent .sec-con2 .section.hobbies .content::before,
+.cvContent .sec-con2 .section.hobbies .content::after,
+.cvContent .sec-con2 .section.languages .content::before,
+.cvContent .sec-con2 .section.languages .content::after {
+    display: none;
+}
+
+.cvContent .sec-con1 .section .items .item .text {
+    font-size: 12px;
+    font-family: var(--fontFamily);
+}
+
+.cvContent .sec-con1 .section .items .item i {
+    padding-top: 5px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.cvContent .cv-body {
+    display: flex;
+    background: #ebebeb;
+    position: relative;
+}
+
+.cvContent .cv-body .sec-con2 {
+    flex: 1;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.cvContent .sec-con2 .sec-heading {
+    padding: 10px;
+    background: var(--theme1);
+    border-radius: 0 25px 25px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 25px;
+    font-family: var(--fontFamily);
+}
+
+.cvContent .sec-con2 .section .info,
+.cvContent .sec-con2 .section .title {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.cvContent .sec-con2 .section .content {
+    margin-left: 50px;
+    position: relative;
+    margin-top: 14px;
+}
+
+.cvContent .sec-con2 .section .content::after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    border: 1px dashed var(--theme1);
+    width: 2px;
+}
+
+.cvContent .sec-con2 .section.skills .content::before,
+.cvContent .sec-con2 .section.skills .content::after {
+    display: none;
+}
+
+.cv-text {
+    font-size: 15px;
+    font-family: var(--fontFamily);
+    font-weight: bold;
+}
+
+.cvContent .sec-con1 .section.languages .progress {
+    width: 50%;
+    height: 10px;
+    background: #333;
+    border-radius: 0;
+}
+
+.cvContent .sec-con1 .section.languages .progress::-webkit-progress-bar {
+    background-color: yellow;
+    border-radius: 7px;
+}
+
+.cvContent .sec-con1 .section.languages .progress .progress-bar {
+    background: #737375;
+    border-radius: none;
+    background: #ede3e1;
+}
+
+.cvContent .sec-con2 .section.skills .skill-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 11px;
+    font-family: var(--fontFamily);
+}
+
+.cvContent .sec-con2 .section.skills .items {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.cvContent .sec-con2 .section.skills .items .item {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.cvContent .sec-con2 .section.skills .items .item .progress,
+.cvContent .sec-con2 .section.languages .items .item .progress {
+    background: #fff;
+    width: 20%;
+    height: 10px;
+    margin-right: 20px;
+}
+
+.cvContent .sec-con2 .section.languages .items .single-item .text {
+    font-size: 16px;
+}
+
+.cvContent .section.skills .items .item .progress-bar {
+    background: #e8ba40;
+}
+
+
+
+.cvContent .section.education .items .item[data-edit="degree"],
+.cvContent .section.softSkill .items .item[data-edit="skill"],
+.cvContent .section.achievements .items .item[data-edit="achievement"],
+.cvContent .section.experience .items .item[data-edit="designation"],
+.cvContent .section.certificates .items .item[data-edit="certificate"] {
+    width: 100%;
+    font-size: 14px;
+    font-family: var(--fontFamily);
+    font-weight: 600;
+}
+
+.cvContent .section.education .items .item[data-edit="description"],
+.cvContent .section.softSkill .items .item[data-edit="description"],
+.cvContent .section.experience .items .item[data-edit="description"],
+.cvContent .section.certificates .items .item[data-edit="description"] {
+    order: 5;
+    width: 100%;
+    margin-top: 10px;
+    font-family: var(--fontFamily);
+}
+
+
+.cvContent .sec-con2 .section.experience .items,
+.cvContent .sec-con2 .section.certificates .items {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.cvContent .cv-body .sec-con2 .section {
+    margin-bottom: 30px;
+}
+
+.cvContent .sec-con1 .section.skills .items .item {
+    width: 100%;
+}
+
+.cvContent .sec-con1 .section.skills .items .item .skill-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.cvContent .sec-con1 .section.skills .items .item .progress {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.cvContent .sec-con2 .section .items {
+    position: relative;
+}
+
+.cvContent .sec-con2 .section.softSkill .items::before,
+.cvContent .sec-con2 .section.achievements .items::before,
+.cvContent .sec-con2 .section.education .items::before,
+.cvContent .sec-con2 .section.experience .items::before,
+.cvContent .sec-con2 .section.certificates .items::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background: var(--theme1);
+    border-radius: 50%;
+    left: -25px;
+    top: 4px;
+}
+
+.cvContent .sec-con2 .section.experience .items .item[data-edit="designation"] {
+    text-transform: uppercase;
+}
+
+.cvContent .sec-con2 .section.experience .items .item[data-edit="location"],
+.cvContent .sec-con2 .section.experience .items .item[data-edit="date"],
+.cvContent .sec-con2 .section.experience .items .item[data-edit="companyName"] {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--fontFamily);
+}
+
+.cvContent .sec-con2 .section.experience .items .item[data-edit="description"] {
+    margin-left: 14px;
+    margin-right: 18px;
+    margin-top: 0;
+}
+
+.cvContent .section.languages .items {
+    display: inline;
+}
+
+.cvContent .section.languages .items .single-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    padding-left: 12px;
+}
+
+.cvContent .sec-con2 .section.languages .items .single-item {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.cvContent .section.languages .items .item {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.cvContent .sec-con1 .section.languages .items .item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--cvLeftColor);
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+.cvContent .sec-con2 .section.languages .items .item::before {
+    background: var(--cvRightColor);
+}
+
+.cvContent .sec-con1 .section .items {
+    position: relative;
+    padding-left: 22px !important;
+}
+
+.cvContent .sec-con1 .section:not(.section.languages) .items::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--cvLeftColor);
+    border-radius: 50%;
+    margin-top: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cvContent .sec-con1 .section .content {
+    padding-left: 14px;
+    margin-top: 14px;
+}
+
+.cvContent .sec-con1 .section .items .item,
+.cvContent .perInfo .items .item .text {
+    color: var(--cvLeftColor) !important;
+}
+
+.cvContent .sec-con2 .section.languages .items .single-item .progress {
+    width: 70px;
+    background-color: white;
+}
+
+.cvContent .sec-con2 .section.languages .items .single-item .progress .progress-bar {
+    background: #e8ba40;
+}
+
+.cvContent .sec-con2 .section.languages .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cvContent .sec-con1 .section.skills .items {
+    padding-left: 0 !important;
+}
+
+.cvContent .sec-con1 .section.skills .items::before {
+    display: none;
+}

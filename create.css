@@ -1,0 +1,78 @@
+:root {
+    --theme1: #3a85b3;
+}
+
+.content-body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.wrapper {
+    width: 80%;
+    background-color: #fff;
+}
+
+.pull-right {
+    display: flex;
+    justify-content: end;
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.pull-away {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+@media print {
+
+
+
+    body.printing .top-buttons,
+    .step-progress-bar-container .progress-bar,
+    #kt_app_toolbar,
+    #kt_app_header,
+    #kt_app_footer,
+    .editor-sidebar-content {
+        display: none;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .cvContent {
+        zoom: normal !important;
+    }
+
+    .cv-content-container {
+        overflow: inherit;
+        padding: 0 !important;
+        padding-top: 20px;
+        margin: 0 !important;
+    }
+
+    .cv-content-container {
+        width: 100% !important;
+    }
+
+    .cv-content-container {
+        background-color: transparent !important;
+    }
+}

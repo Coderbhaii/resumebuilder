@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="">
+
+<link rel="stylesheet" href="">
+
+
+<link rel="stylesheet" href="hi ho">
+
+
+
+
+
+
+
+
+html:
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic A4 Page Layout</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        #container {
+            display: flex;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        #leftSection {
+            background-color: blue;
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10mm;
+        }
+
+        #rightSection {
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10mm;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="leftSection"></div>
+        <div id="rightSection">Some initial right content
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </p>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

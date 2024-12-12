@@ -1,0 +1,57 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cv-container {
+        width: 210mm;
+        height: 297mm;
+        page-break-after: always;
+    }
+
+    .page-break {
+        display: none;
+    }
+
+    #exportPDF {
+        display: none;
+    }
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.cv-container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 210mm;
+}
+
+.content-layer {
+    padding: 20mm;
+}
+
+.section {
+    margin-bottom: 10mm;
+}
+
+.page-break {
+    border: none;
+    border-top: 1px dashed #bbb;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    page-break-after: always;
+}
